@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset Request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Request Password Reset</h2>
+        <p>If you can't remember the password you signed up with, you can reset it here, you just need to know the&nbsp; Email you signed up with.&nbsp;&nbsp;</p>
+<form method="POST" action="web-send-reset-email.php">
+      <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Send reset link</button>
+        </form>
+</div>
+<br>
+<br>
+<hr>	
+
+</body>
+</html>

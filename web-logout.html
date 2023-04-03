@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>web-logout</title>
+</head>
+
+<body>
+<?php
+session_start();
+
+// Unset session variables and destroy the session
+$_SESSION = array();
+session_destroy();
+
+// Redirect to the login page
+header("Location: http://jwle.us/index.html");
+exit;
+?>	
+</body>
+</html>
